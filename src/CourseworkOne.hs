@@ -1,8 +1,11 @@
 module CourseworkOne where
+
 import Backwords.Types
+import Backwords.WordList
+
 import Data.List
 import Data.Char
-import Backwords.WordList
+import Data.Ratio
 
 --------------------------------------------------------------------------------
 -- This file is your complete submission for the first coursework of CS141.
