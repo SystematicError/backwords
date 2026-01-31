@@ -17,7 +17,7 @@ import Brick hiding (Down)
 import Brick.Widgets.Border
 import Brick.Widgets.Center
 import CourseworkOne qualified as CW
-import Data.Char (toLower)
+import Data.Char (toLower, toUpper)
 import Data.List qualified as List
 import Data.Maybe (fromMaybe)
 import Data.Set qualified as Set
@@ -202,15 +202,38 @@ drawScreen TUIState {..} =
 renderTile :: Bool -> Char -> Bool -> Widget Name
 renderTile isRaised c isUsed =
   (if isUsed then withAttr "usedTile" else id) $
-    (if isRaised then padBottom (Pad 1) else padTop (Pad 1)) $
-      border $
-        hLimit 3 $
-          hCenter $
-            txt $
-              Text.pack [c]
+    (if isRaised then padBottom (Pad 1) else padTop (Pad 1)) $ vBox [
+      hBox [borderTL, hLimit 3 hBorder, borderTR],
+      hBox [ 
+        vLimit 1 vBorder,
+        hLimit 3 $ hCenter $ txt $ Text.pack [toUpper c],
+        vLimit 1 vBorder
+        ],
+      hBox [borderBL, hLimit 4 $ hBorder <+> str tileScore]
+    ]
+  where 
+    tileScore = tryGetUnsafe "?" (show $ CW.letterValue c)
+    borderTL = joinableBorder $ Edges False True False True
+    borderTR = joinableBorder $ Edges False True True False
+    borderBL = joinableBorder $ Edges True False False True
 
 renderLetter :: Char -> Widget Name
-renderLetter c = border $ hLimit 3 $ hCenter $ txt $ Text.pack [c]
+-- renderLetter c = border $ hLimit 3 $ hCenter $ txt $ Text.pack [toUpper c]
+renderLetter c =
+  vBox
+    [ hBox [borderTL, hLimit 3 hBorder, borderTR],
+      hBox
+        [ vLimit 1 vBorder,
+          hLimit 3 $ hCenter $ txt $ Text.pack [toUpper c],
+          vLimit 1 vBorder
+        ],
+      hBox [borderBL, hLimit 4 $ hBorder <+> str tileScore]
+    ]
+  where
+    tileScore = tryGetUnsafe "?" (show $ CW.letterValue c)
+    borderTL = joinableBorder $ Edges False True False True
+    borderTR = joinableBorder $ Edges False True True False
+    borderBL = joinableBorder $ Edges True False False True
 
 renderTitle :: Widget Name
 renderTitle = hBox $ map renderChar "BACKWORDS"
