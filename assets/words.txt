@@ -1,7 +1,3 @@
-I'd
-I'll
-I'm
-I've
 aah
 aalii
 aardvark
@@ -1289,7 +1285,6 @@ aimless
 aimlessly
 aims
 ain
-ain't
 aiolis
 air
 airbag
@@ -3041,7 +3036,6 @@ areaway
 areaways
 areca
 arecas
-aren't
 arena
 arenas
 areola
@@ -9277,7 +9271,6 @@ cams
 camshaft
 camshafts
 can
-can't
 canaigre
 canaille
 canakin
@@ -13875,7 +13868,6 @@ coughed
 coughing
 coughs
 could
-couldn't
 couldst
 coulis
 coulisse
@@ -17217,7 +17209,6 @@ diddler
 diddlers
 diddles
 diddling
-didn't
 dido
 didoes
 didos
@@ -18113,7 +18104,6 @@ doers
 does
 doeskin
 doeskins
-doesn't
 doff
 doffed
 doffing
@@ -18260,7 +18250,6 @@ domino
 dominoes
 dominos
 don
-don't
 dona
 donas
 donate
@@ -19356,8 +19345,6 @@ dystopias
 dystrophy
 dysuria
 dziggetai
-e'en
-e'er
 each
 eager
 eagerer
@@ -20716,7 +20703,6 @@ entourage
 entozoa
 entozoic
 entozoon
-entr'acte
 entrails
 entrain
 entrained
@@ -24010,8 +23996,6 @@ flyways
 flyweight
 flywheel
 flywheels
-fo'c's'le
-fo'c'sle
 foal
 foaled
 foaling
@@ -28039,7 +28023,6 @@ gyve
 gyved
 gyves
 gyving
-h'm
 haaf
 haar
 habanera
@@ -28094,7 +28077,6 @@ hadj
 hadjes
 hadji
 hadjis
-hadn't
 hadron
 hadrons
 hadrosaur
@@ -28618,7 +28600,6 @@ hashes
 hashing
 haslet
 haslets
-hasn't
 hasp
 hasps
 hassle
@@ -28716,7 +28697,6 @@ hauteur
 have
 havelock
 haven
-haven't
 havens
 haver
 havering
@@ -28806,9 +28786,6 @@ haziness
 hazing
 hazings
 hazy
-he'd
-he'll
-he's
 head
 headache
 headaches
@@ -29222,7 +29199,6 @@ herds
 herdsman
 herdsmen
 here
-here's
 hereabout
 hereafter
 hereat
@@ -30203,7 +30179,6 @@ hoverer
 hovering
 hovers
 how
-how's
 howbeit
 howdah
 howdahs
@@ -32314,7 +32289,6 @@ islet
 islets
 ism
 isms
-isn't
 isobar
 isobaric
 isobarism
@@ -32389,9 +32363,6 @@ isthmian
 isthmus
 isthmuses
 istle
-it'd
-it'll
-it's
 italic
 italics
 itch
@@ -34994,7 +34965,6 @@ lessor
 lessors
 lest
 let
-let's
 letdown
 letdowns
 lethal
@@ -36496,7 +36466,6 @@ lysozyme
 lyssa
 lytic
 lytta
-ma'am
 mac
 macabre
 macaco
@@ -37328,7 +37297,6 @@ mast
 mastaba
 masted
 master
-master's
 mastered
 masterful
 mastering
@@ -37492,7 +37460,6 @@ mayflower
 mayfly
 mayhap
 mayhem
-mayn't
 mayo
 mayor
 mayoral
@@ -38230,7 +38197,6 @@ might
 mightier
 mightiest
 mightily
-mightn't
 mights
 mighty
 mignon
@@ -39921,7 +39887,6 @@ mustier
 mustiest
 mustily
 mustiness
-mustn't
 musts
 musty
 mut
@@ -40318,7 +40283,6 @@ nawab
 nay
 nays
 naysayer
-ne'er
 neap
 neaps
 near
@@ -40399,7 +40363,6 @@ needler
 needles
 needless
 needling
-needn't
 needs
 needy
 nefarious
@@ -41040,7 +41003,6 @@ noose
 nooses
 nope
 nor
-nor'easter
 noria
 norias
 norite
@@ -41396,8 +41358,6 @@ nymphs
 nystagmic
 nystagmus
 nystatin
-o'clock
-o'er
 oaf
 oafish
 oafishly
@@ -42467,7 +42427,6 @@ oubliette
 ouch
 oud
 ought
-oughtn't
 oui
 ounce
 ounces
@@ -45599,7 +45558,6 @@ pizzazzes
 pizzeria
 pizzerias
 pizzicato
-pj's
 placable
 placard
 placarded
@@ -54779,7 +54737,6 @@ shamrock
 shamrocks
 shams
 shamus
-shan't
 shandies
 shandy
 shanghai
@@ -54859,9 +54816,6 @@ shay
 shaykh
 shays
 she
-she'd
-she'll
-she's
 sheaf
 shear
 sheared
@@ -55234,7 +55188,6 @@ shotten
 should
 shoulder
 shoulders
-shouldn't
 shouldst
 shout
 shouted
@@ -57438,7 +57391,6 @@ sotted
 sottish
 sottishly
 sou
-sou'wester
 soubise
 soubrette
 sough
@@ -62033,7 +61985,6 @@ thankless
 thanks
 thar
 that
-that's
 thatch
 thatched
 thatcher
@@ -62103,7 +62054,6 @@ therapist
 therapsid
 therapy
 there
-there's
 thereat
 thereby
 therefor
@@ -62153,10 +62103,6 @@ thewless
 thews
 thewy
 they
-they'd
-they'll
-they're
-they've
 thiamin
 thiamine
 thiazine
@@ -67697,7 +67643,6 @@ washtubs
 washwoman
 washwomen
 washy
-wasn't
 wasp
 waspish
 waspishly
@@ -67836,10 +67781,6 @@ wayward
 waywardly
 wayworn
 wayzgoose
-we'd
-we'll
-we're
-we've
 weak
 weaken
 weakened
@@ -68067,7 +68008,6 @@ wens
 went
 wept
 were
-weren't
 werewolf
 wergild
 wernerite
@@ -68138,7 +68078,6 @@ wharfs
 wharve
 wharves
 what
-what's
 whatever
 whatnot
 whats
@@ -68197,7 +68136,6 @@ whence
 whenever
 whens
 where
-where's
 whereas
 whereat
 whereby
@@ -68388,11 +68326,6 @@ whizzed
 whizzes
 whizzing
 who
-who'd
-who'll
-who're
-who's
-who've
 whoa
 whodunit
 whodunits
@@ -68447,7 +68380,6 @@ whoso
 whosoever
 whup
 why
-why'd
 whydah
 whydahs
 whys
@@ -68915,7 +68847,6 @@ womenkind
 womera
 wommera
 won
-won't
 wonder
 wondered
 wonderful
@@ -69134,9 +69065,7 @@ worthless
 worthy
 wot
 would
-would've
 wouldest
-wouldn't
 wouldst
 wound
 wounded
@@ -69325,7 +69254,6 @@ xylols
 xylophone
 xylotomy
 xyster
-y'all
 yabber
 yacht
 yachted
@@ -69555,10 +69483,6 @@ york
 yorker
 yorkers
 you
-you'd
-you'll
-you're
-you've
 young
 younger
 youngest
