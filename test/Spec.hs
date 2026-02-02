@@ -55,12 +55,12 @@ tests = testGroup "Tests"
   , ex2DisplayStringTests
   , ex3IsValidWordTests
   , ex4LetterValueTests
-  , ex4ScoreWordTests
-  , ex5PossibleWordsTests
-  , ex6BestWordTests
-  , ex7UseTilesTests
-  , ex8BagDistributionTests
-  , ex9AiMoveTests
+  , ex5ScoreWordTests
+  , ex6PossibleWordsTests
+  , ex7BestWordTests
+  , ex8UseTilesTests
+  , ex9BagDistributionTests
+  , ex10AiMoveTests
   ]
 prettyRational :: Rational -> String
 prettyRational r = printf "%.2f" (fromRational r :: Double)
@@ -124,8 +124,8 @@ ex4LetterValueTests =
         sum (map letterValue ['a' .. 'z']) @?= 87
     ]
 
-ex4ScoreWordTests :: TestTree
-ex4ScoreWordTests =
+ex5ScoreWordTests :: TestTree
+ex5ScoreWordTests =
   testGroup "Ex. 4: scoreWord"
     [ testCase "Example 1 works" $
         scoreWord "a" @?= 1
@@ -139,8 +139,8 @@ ex4ScoreWordTests =
         scoreWord "stressed" @?= 383
     ]
 
-ex5PossibleWordsTests :: TestTree
-ex5PossibleWordsTests =
+ex6PossibleWordsTests :: TestTree
+ex6PossibleWordsTests =
   testGroup "Ex. 5: possibleWords"
     [ testCase "Example 1 works" $
         sort (possibleWords "aet") @?=
@@ -149,8 +149,8 @@ ex5PossibleWordsTests =
         possibleWords "qqqqqqq" @?= []
     ]
 
-ex6BestWordTests :: TestTree
-ex6BestWordTests =
+ex7BestWordTests :: TestTree
+ex7BestWordTests =
   testGroup "Ex. 6: bestWord"
     [ testCase "Example 1 works" $
         bestWord "aehrt" @?= Just "earth"
@@ -158,8 +158,8 @@ ex6BestWordTests =
         bestWord "qqqqqqq" @?= Nothing
     ]
 
-ex7UseTilesTests :: TestTree
-ex7UseTilesTests =
+ex8UseTilesTests :: TestTree
+ex8UseTilesTests =
   testGroup "Ex. 7: useTiles"
     [ testCase "Example 1 works" $
         useTiles "abc" "abc" @?=
@@ -192,8 +192,8 @@ genRackAndWord = do
   word <- shuffle subset
   pure (rack, word)
 
-ex8BagDistributionTests :: TestTree
-ex8BagDistributionTests =
+ex9BagDistributionTests :: TestTree
+ex9BagDistributionTests =
   testGroup "Ex. 8: bagDistribution"
     [ testCase "Example 1 works" $
         sort (bagDistribution "aabbc") @?=
@@ -205,8 +205,8 @@ ex8BagDistributionTests =
           sum (map snd (bagDistribution bag)) == 1
     ]
 
-ex9AiMoveTests :: TestTree
-ex9AiMoveTests =
+ex10AiMoveTests :: TestTree
+ex10AiMoveTests =
   testGroup "Ex. 9: aiMove"
     [ testProperty "AI draws when rack under nine" $
         forAll (listOf (elements ['a' .. 'z'])) $ \rack ->

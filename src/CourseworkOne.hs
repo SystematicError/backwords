@@ -60,7 +60,7 @@ bagDistribution :: [Char] -> [(Char, Rational)]
 bagDistribution = error "Not implemented"
 
 
--- Ex. 9:
+-- Ex. 10:
 -- Write an AI which plays the Backwords game as well as possible.
 aiMove :: [Char] -> [Char] -> Move
 aiMove bag rack = error "Not implemented"
