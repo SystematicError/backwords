@@ -126,7 +126,7 @@ ex4LetterValueTests =
 
 ex5ScoreWordTests :: TestTree
 ex5ScoreWordTests =
-  testGroup "Ex. 4: scoreWord"
+  testGroup "Ex. 5: scoreWord"
     [ testCase "Example 1 works" $
         scoreWord "a" @?= 1
     , testCase "Example 2 works" $
@@ -141,7 +141,7 @@ ex5ScoreWordTests =
 
 ex6PossibleWordsTests :: TestTree
 ex6PossibleWordsTests =
-  testGroup "Ex. 5: possibleWords"
+  testGroup "Ex. 6: possibleWords"
     [ testCase "Example 1 works" $
         sort (possibleWords "aet") @?=
           sort ["ate", "eat", "eta", "tea"]
@@ -151,7 +151,7 @@ ex6PossibleWordsTests =
 
 ex7BestWordTests :: TestTree
 ex7BestWordTests =
-  testGroup "Ex. 6: bestWord"
+  testGroup "Ex. 7: bestWord"
     [ testCase "Example 1 works" $
         bestWord "aehrt" @?= Just "earth"
     , testCase "Example 2 works" $
@@ -160,7 +160,7 @@ ex7BestWordTests =
 
 ex8UseTilesTests :: TestTree
 ex8UseTilesTests =
-  testGroup "Ex. 7: useTiles"
+  testGroup "Ex. 8: useTiles"
     [ testCase "Example 1 works" $
         useTiles "abc" "abc" @?=
           [Used 'a', Used 'b', Used 'c']
@@ -194,7 +194,7 @@ genRackAndWord = do
 
 ex9BagDistributionTests :: TestTree
 ex9BagDistributionTests =
-  testGroup "Ex. 8: bagDistribution"
+  testGroup "Ex. 9: bagDistribution"
     [ testCase "Example 1 works" $
         sort (bagDistribution "aabbc") @?=
           sort [('a', 2 % 5), ('b', 2 % 5), ('c', 1 % 5)]
@@ -207,7 +207,7 @@ ex9BagDistributionTests =
 
 ex10AiMoveTests :: TestTree
 ex10AiMoveTests =
-  testGroup "Ex. 9: aiMove"
+  testGroup "Ex. 10: aiMove"
     [ testProperty "AI draws when rack under nine" $
         forAll (listOf (elements ['a' .. 'z'])) $ \rack ->
         forAll (listOf1 (elements ['a' .. 'z'])) $ \bag ->
