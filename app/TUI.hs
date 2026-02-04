@@ -424,19 +424,24 @@ aiPlayWord = do
       (c : _) -> do
         appendLetter c
 
+
 aiChooseTile :: GameUpdate
 aiChooseTile = do
   bag <- gets (bag . gameState)
   rack <- gets (rack . gameState)
 
-  tryGet (CW.aiMove bag rack) >>= \case
-    Nothing -> do
-      error "AI failed to choose a tile."
-    Just move -> case move of
-      Ty.TakeVowel -> applyChooseTile True
-      Ty.TakeConsonant -> applyChooseTile False
-      Ty.PlayWord _ -> do
-        error "AI tried to play a word when it should take a letter."
+  if null bag
+    then do
+      modify $ \t -> t { currentMode = GameOver BagEmpty }       
+    else do
+      tryGet (CW.aiMove bag rack) >>= \case
+        Nothing -> do
+          error "AI failed to choose a tile."
+        Just move -> case move of
+          Ty.TakeVowel -> applyChooseTile True
+          Ty.TakeConsonant -> applyChooseTile False
+          Ty.PlayWord _ -> do
+            error "AI tried to play a word when it should take a letter."
 
 
 
