@@ -167,8 +167,8 @@ handleEvent (Brick.VtyEvent (EvKey (KChar c) [])) = do
   b <- gets (bag . gameState)
   case mode of
     PlayWord -> addLetter c
-    ChooseTakeTile | c == 'v' && any (`elem` vowels) bag -> chooseVowel
-                   | c == 'c' && any (`elem` consonants) bag -> chooseConsonant
+    ChooseTakeTile | c == 'v' && any (`elem` vowels) b -> chooseVowel
+                   | c == 'c' && any (`elem` consonants) b -> chooseConsonant
                    | otherwise -> pure ()
     _ -> pure ()
 handleEvent (Brick.VtyEvent (EvKey KBS [])) = backspace
