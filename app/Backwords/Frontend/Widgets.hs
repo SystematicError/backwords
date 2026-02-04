@@ -175,7 +175,7 @@ drawScreen TUIState {..} =
 
     selectionButton :: Name -> String -> Int -> Widget Name -> Widget Name
     selectionButton btn label remaining hint =
-      clickable btn $
+      (if remaining > 0 then clickable btn else id) $
         border $
           hLimit 30 $
             vLimit 10 $
