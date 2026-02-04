@@ -164,7 +164,7 @@ handleEvent (Brick.VtyEvent (EvKey (KChar 'r') [MCtrl])) = do
 handleEvent (Brick.VtyEvent (EvKey (KChar ' ') [])) = toggleBag
 handleEvent (Brick.VtyEvent (EvKey (KChar c) [])) = do
   mode <- gets currentMode
-  b = bag . gets gameState
+  b <- gets (bag . gameState)
   case mode of
     PlayWord -> addLetter c
     ChooseTakeTile | c == 'v' && any (`elem` vowels) bag -> chooseVowel
