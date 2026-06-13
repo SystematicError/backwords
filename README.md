@@ -1,17 +1,29 @@
-# Backwords
+# What Is Backwords?
 
-This repository contains the skeleton code for CS141 Functional Programming coursework 1.
+Backwords is a Scrabble-like game where a player play words from your rack until no further words can be formed or until the bag runs out. Words are scored similar to scrabble with one notable exception: letters towards the end are weighted higher using powers of two (hence the name). The goal is to maximise your score.
 
-Please read the specification IN FULL before attempting to write your solution.
+This project was submitted as part of my university coursework. I have designed an AI that attempts to play as efficiently as possible.
 
-### Notes
+# How the AI Works
 
-The word list is "safedict_full.txt" from InnovativeInventor's dict4schools project, released into the public domain:
+When drawing letters from the bag, the AI tries to maintain an ideal vowel to consonant ratio. For the given dictionary, this ratio is around 4:5.
 
-https://github.com/InnovativeInventor/dict4schools/
+The word playing strategy is more elaborate, it performs static evaluation and then [Monte Carlo simulations](https://en.wikipedia.org/wiki/Monte_Carlo_method) to find the optimal word to play. This is inspired by Scrabble engines like [Quackle](https://people.csail.mit.edu/jasonkb/quackle/).
 
-intersected with the Levidrome list:
+1. For a given rack, the AI calculates an evaluation for all possible words it can play. The evaluation function is calculated using two other scoring functions:
+   - `scoreWord`, which scores the word being played
+   - `scoreRackLeave`, which scores the rack leave (the rack letters left after playing a word)
+2. From the set of all possible words, the AI selects a few candidates with high evaluations.
+3. For each candidate word, the AI simulates playing the next few words.
+4. The AI does numerous random simulations for every word, and plays the word with the highest average simulation score.
 
-https://www.levidromelist.com/levidrome-list/dictionary
+The AI achieves an average score of **2843**.
 
-and excluding any words of length 2 or 1.
+# Usage
+
+| Command               | Description                               |
+| --------------------- | ----------------------------------------- |
+| `stack run`           | Run just the game, to try it out yourself |
+| `stack run ai`        | Run the AI alongside the game GUI         |
+| `stack run total [n]` | Run $n$ AI games in headless mode         |
+| `stack test`          | Test suite                                |
