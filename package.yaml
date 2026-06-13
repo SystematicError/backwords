@@ -17,6 +17,10 @@ dependencies:
 - containers
 - file-embed
 - random
+- bytestring
+- bytestring-trie
+- parallel
+- random-shuffle
 
 default-extensions:
 - TypeSynonymInstances
@@ -36,6 +40,7 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+    - -O2
     dependencies:
     - backwords
     - brick
@@ -56,6 +61,7 @@ tests:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+    - -O2
     dependencies:
     - backwords
     - tasty
