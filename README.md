@@ -4,6 +4,8 @@ Backwords is a Scrabble-like game where a player play words from your rack until
 
 This project was submitted as part of my university coursework. I have designed an AI that attempts to play as efficiently as possible.
 
+![Demo image](https://github.com/user-attachments/assets/2f4b357f-13e5-4183-9b80-99fcdfd2d40a)
+
 # How the AI Works
 
 When drawing letters from the bag, the AI tries to maintain an ideal vowel to consonant ratio. For the given dictionary, this ratio is around 4:5.
