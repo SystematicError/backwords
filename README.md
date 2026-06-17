@@ -1,8 +1,8 @@
 # What Is Backwords?
 
-Backwords is a Scrabble-like game where a player play words from your rack until no further words can be formed or until the bag runs out. Words are scored similar to Scrabble with one notable exception: letters towards the end of the word are weighted higher using powers of two (hence the name). The goal is to maximise your score.
+Backwords is a Scrabble-like game where a player play words from your rack until no further words can be formed or until the bag runs out. Words are scored similar to Scrabble with one notable exception: letters towards the end of the word are weighted higher using powers of two (hence the name). The goal is to maximise your score. I have designed an AI that attempts to play Backwords as efficiently as possible.
 
-This project was submitted as part of my university coursework. I have designed an AI that attempts to play as efficiently as possible.
+This project was submitted as part of the coursework required by my university's [CS141](https://warwick.ac.uk/fac/sci/dcs/teaching/modules/cs141/) module, and was awarded a grade of 100% (High First Class).
 
 ![Demo image](https://github.com/user-attachments/assets/2f4b357f-13e5-4183-9b80-99fcdfd2d40a)
 
